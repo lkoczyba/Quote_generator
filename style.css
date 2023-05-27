@@ -15,7 +15,42 @@
     font-family: var(--ff-primary), sans-serif;
     min-height: 100vh;
     text-align: center;
+    font-weight: bold;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
+}
+.quote-container {
+    width: auto;
+    max-width: 900px;
+    padding: 20px 30px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, .15);
+    backdrop-filter: blur(5px);
+    box-shadow: 5px -2px 12px 5px rgba(0, 0, 0, 0.3);
+}
+.quote-text{
+    font-size: 2.75rem;
+}
+.long-quote{
+    font-size: 2rem;
+}
+.fa-quote-left{
+    font-size: 4rem;
+}
+.quote-author{
+    font-size: 2rem;
+    margin-top: 15px;
+    font-weight: normal;
+    font-style: italic;
+}
+/*Media Query: Tablet or Smaller*/
+@media screen and (max-width: 1000px) {
+    .quote-container{
+        margin: auto 10px;
+    }
+    .quote-text{
+        font-size: 2.5rem;
+    }
 }
